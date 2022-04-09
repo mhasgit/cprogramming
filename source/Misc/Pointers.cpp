@@ -21,14 +21,13 @@ cout<<"\n Target string is "<<target;
 
 
 
-  /*
    int location = 20;
    int* p;
    p = &location;
    *p = *p + 1;
    cout << "Adress of P is: "<<p <<endl;
    cout << "Adress of P is: "<<*p;
-   */
+   
 
 
 
