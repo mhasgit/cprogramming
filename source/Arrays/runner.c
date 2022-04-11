@@ -2,6 +2,8 @@
 #include <stdbool.h>
 #include "array_chapter.h"
 
+#define SIZE 100
+
 void print_help();
 
 int main(void)
@@ -17,7 +19,7 @@ int main(void)
 
 		switch (no)
 		{
-		case 1:
+		case SIZE:
 			print_diagonal_matrix();
 			break;
 		case 2:
