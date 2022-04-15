@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+#define H 100
+
 #define pi (3.1416f)
 #define N (10)
 #define NUM_RATES ((int)(sizeof(value) / sizeof(value[0])))

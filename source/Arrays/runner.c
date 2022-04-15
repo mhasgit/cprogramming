@@ -1,8 +1,11 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include "array_chapter.h"
+#include "char-helper.h"
 
 #define SIZE 100
+
+
 
 void print_help();
 
@@ -36,10 +39,30 @@ int main(void)
 			break;
 		case 6:
 			print_repeated_digits_count();
+			break;
 		case 7:
 			print_max_no_in_array();
+			break;
 		case 8:
 			computing_interest();
+			break;
+		case 9:
+			printf("Enter a char: ");
+			char ch = getch();
+			printf("is_character: %s\n", is_character(ch) == true ? "True" : "False");
+			break; 
+		case 10:
+			printf("Enter a char: ");
+			is_digit(getch());
+			break;
+		case 11:
+			printf("Enter a char: ");
+			to_lower(getch());
+			break;
+		case 12:
+			printf("Enter a char: ");
+			to_upper(getch());
+			break;
 
 		default:
 			print_help();
@@ -61,6 +84,10 @@ void print_help()
 	printf("5. print_finding_circle_area \n");
 	printf("6. print_repeated_digits_count \n");
 	printf("7. print_max_no_in_array \n");
-	printf("8. computing_interest()");
+	printf("8. computing_interest() \n");
+	printf("9. is_character() \n");
+	printf("10. is_digit() \n");
+	printf("11. to_lower() \n");
+	printf("12. to_upper() \n");
 	printf("\n\n");
 }

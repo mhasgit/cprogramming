@@ -1,8 +1,16 @@
-all: runner.o array_chapter.o
-	gcc -o runner.exe runner.o array_chapter.o
+all: runner.o array_chapter.o char-helper.o
+	gcc $^ -o runner.exe
 
 runner.o: runner.c
-	gcc -c runner.c
+	gcc -c $^
 
-array_chapter.o: array_chapter.h array_chapter.c
-	gcc -c array_chapter.c
+array_chapter.o: array_chapter.c
+	gcc -c $^
+
+char-helper.o: char-helper.c
+	gcc -c $^
+
+clean: 
+	del *.o
+	del *.exe
+	del *.e

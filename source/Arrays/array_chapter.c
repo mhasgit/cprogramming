@@ -30,7 +30,6 @@ void print_diagonal_matrix()
 }
 
 void print_repeated_digits()
-
 {
   // Checking Reapeated Digits
   bool arr[10] = {false};
@@ -184,3 +183,47 @@ void computing_interest()
     printf("\n");
   }
 }
+
+/*
+void print_biff_message()
+{
+  char msg[H];
+  printf("Enter your message: ");
+      getchar(msg);
+      for (int j = 0; j <= msg[H]; j++)
+      {
+        switch (msg[j])
+        {
+        case a: case A:
+          printf("4");
+          break;
+        case b: case B:
+          printf("8");
+          break;
+        case e: case E:
+          printf("3");
+          break;
+        case i: case I:
+          printf("1");
+          break;
+        case o: case O:
+          printf("0");
+          break;
+        case s: case S:
+          printf("5");
+          break;
+        default:
+        printf("%c", msg[j]);
+        break;
+
+
+
+        
+        default:
+          break;
+        }
+      }
+      
+}
+
+*/

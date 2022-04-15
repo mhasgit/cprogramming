@@ -5,8 +5,8 @@
 bool prime_number(int n)
 {
     int divisor;
-    if(n <= 0) 
-    return false;
+    if (n <= 0)
+        return false;
     for (divisor = 2; divisor * divisor <= n; divisor++)
     {
         if (n % divisor == 0)
@@ -23,9 +23,9 @@ int main()
     scanf("%d", &n);
 
     if (prime_number(n))
-    printf("You entered a prime number...\n");
+        printf("You entered a prime number...\n");
     else
-    printf("Not a prime number...\n");
+        printf("Not a prime number...\n");
 
     return 0;
 }
