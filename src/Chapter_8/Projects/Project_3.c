@@ -1,4 +1,7 @@
 #include <stdio.h>
+
+int matrix_5_by_5();
+
 int main()
 {
     matrix_5_by_5();

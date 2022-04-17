@@ -2,7 +2,7 @@
 
 void print_repeated_digits(long n)
 {
-    // Checking Reapeated Digits
+    // Checking Repeated Digits
     int a[10] = {0};
 
     int digit;
@@ -20,7 +20,7 @@ void print_repeated_digits(long n)
     }
 
     printf("\n");
-    printf("Occurances: ");
+    printf("Occurrances: ");
     for (int i = 0; i < 10; i++)
     {
         printf("%5d", a[i]);
@@ -36,7 +36,7 @@ int main()
 
     while (n < 0)
     {
-        print_repeated_digits();
+        print_repeated_digits(n);
 
         printf("\n");
         printf("Enter a Number: ");

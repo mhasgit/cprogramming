@@ -2,7 +2,7 @@
 
 void print_repeated_digits()
 {
-    // Checking Reapeated Digits
+    // Checking Repeated Digits
     int a[10] = {0};
     long n;
     printf("Enter a Number: ");
