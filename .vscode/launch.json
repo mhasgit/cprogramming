@@ -7,13 +7,13 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "cwd": "c:/Code/cprogramming/source/Chapter_8/Projects",
+      "cwd": "c:/Code/cprogramming/src/chapter_10",
       "environment": [],
-      "program": "c:/Code/cprogramming/source/Chapter_8/Projects/build/Debug/outDebug",
+      "program": "c:/Code/cprogramming/src/chapter_10/build/Debug/outDebug",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
       "miDebuggerPath": "C:/MinGW/bin/gdb.exe",
-      "externalConsole": false,
+      "console": "integratedTerminal",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",

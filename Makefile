@@ -1,4 +1,4 @@
-vpath %.c src\*
+vpath %.c src
 vpath %.c src\Arrays
 vpath %.c src\Chapter_8\Exercises
 vpath %.c src\Chapter_8\Projects
@@ -20,12 +20,6 @@ chapter_8_2: Project_2.o
 
 chapter_8_3: Project_3.o
 	gcc $(CPPFLAGS) $^ -o build\$@.exe
-
-array_chapter.o: array_chapter.h
-
-char-helper.o: char-helper.h
-
-
 
 %.o: %.c
 	gcc $(CPPFLAGS) -c $^

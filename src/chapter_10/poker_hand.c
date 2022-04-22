@@ -40,6 +40,7 @@ void read_cards(void)
         for (suit = 0; suit < NUM_SUITS; suit++)
             card_exists[rank][suit] = false;
     }
+
     for (suit = 0; suit < NUM_SUITS; suit++)
         num_in_suit[suit] = 0;
 
@@ -127,9 +128,15 @@ void read_cards(void)
             bad_card = true;
         }
 
+        // wait until user presses enter
         while ((ch = getchar() != '\n'))
+        {
             if (ch != ' ')
+            {
                 bad_card = true;
+            }
+        }
+
         if (bad_card)
             printf("bad card; ignored.\n");
         else if (card_exists[rank][suit])
