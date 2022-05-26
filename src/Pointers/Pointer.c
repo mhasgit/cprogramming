@@ -22,7 +22,16 @@ int main()
     for (ptr = a; ptr < a + N; ptr++)
         sum += *ptr;
     {
-        printf("%d", sum);
+        printf("%d\n", sum);
+    }
+
+    int sum_1 = 0;
+    int arr[N] = {1, 2, 3, 4, 5};
+    int *ptr_1 = arr;
+    for (int j = 0; j < N; j++)
+        sum_1 += ptr_1[j];
+    {
+        printf("%d\n", sum_1);
     }
     return 0;
 }
